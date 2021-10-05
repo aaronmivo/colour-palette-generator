@@ -98,11 +98,11 @@ export default function Navbar({ colors }) {
                 </NavLink>
               </li>
               <li className="text-left">
-                <NavLink to="/explore">
+                <NavLink to="/saved">
                   <div
                     className={`px-3 py-2 flex items-center text-base uppercase font-medium leading-snug text-gray-800 hover:opacity-75`}
                   >
-                    <div className="mx-4">Explore</div>
+                    <div className="mx-4">Saved</div>
                   </div>
                 </NavLink>
               </li>

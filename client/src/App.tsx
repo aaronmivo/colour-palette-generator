@@ -7,7 +7,7 @@ import DemoPage from './components/DemoPage';
 import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 import PalettePage from './components/PalettePage';
-import ExplorePage from './components/ExplorePage';
+import SavePage from './components/SavedPage'
 import colorService from './services/colorService';
 
 interface IState {
@@ -176,8 +176,8 @@ function App() {
             generatePalette={generatePalette}
           />
         </Route>
-        <Route exact path="/explore">
-          <ExplorePage setColors={setColors} />
+        <Route exact path="/saved">
+          <SavePage setColors={setColors}/>
         </Route>
       </Switch>
     </div>

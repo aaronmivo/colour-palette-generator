@@ -1,5 +1,5 @@
 import React from 'react';
-import exploreService from '../services/exploreService';
+import saveService from '../services/saveService';
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 
 const colorModes: { title: string; mode: string }[] = [
@@ -38,7 +38,7 @@ const OptionsBar = ({
   const { buttonProps, isOpen, setIsOpen } = useDropdownMenu(numberOfItems);
 
   const saveColor = () => {
-    exploreService.addPalette(colors);
+    saveService.addPalette(colors);
   };
 
   const formatString = () => {
