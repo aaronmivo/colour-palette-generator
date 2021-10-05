@@ -1,7 +1,7 @@
 // @ts-nocheck
 import Card from './Card';
 
-const CardList = ({data, setColors, mockUser}) => {
+const CardList = ({data, setColors}) => {
  
   if (data) {
     return (
@@ -9,7 +9,7 @@ const CardList = ({data, setColors, mockUser}) => {
         <ul className="my-12 md:flex md:flex-wrap md:justify-center">
           {data.map((palette, i) => (
             <li key={palette.id} className="mb-10 md:mx-5">
-              <Card palette={palette} setColors={setColors} mockUser={mockUser} />
+              <Card palette={palette} setColors={setColors} />
             </li>
           ))}
         </ul>

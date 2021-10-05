@@ -177,7 +177,7 @@ function App() {
           />
         </Route>
         <Route exact path="/saved">
-          <SavePage/>
+          <SavePage setColors={setColors}/>
         </Route>
       </Switch>
     </div>

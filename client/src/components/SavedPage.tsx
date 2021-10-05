@@ -1,8 +1,10 @@
+//@ts-nocheck
 import React, {useState, useEffect} from 'react'
+import CardList from './CardList';
 
 import axios from 'axios';
 
-function SavedPage() {
+function SavedPage({setColors}) {
     const [palette, setPalette] = useState([])
 
     useEffect(() => {
@@ -14,6 +16,7 @@ function SavedPage() {
         <div>
             Palettes
             {console.log(palette)}
+            <CardList data={palette} setColors={setColors}/>
         </div>
     )
 }

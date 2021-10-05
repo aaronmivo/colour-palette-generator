@@ -157,6 +157,60 @@
           "color": "#FC6193"
         }
       ]
+    },
+    {
+      "id": "dd23d199-b81b-42a2-989e-f069cfb9aa48",
+      "colors": [
+        {
+          "id": "4db8935c-0596-4be7-9cd0-d5392998d1b4",
+          "color": "#01140C"
+        },
+        {
+          "id": "d3fa7cb3-64b6-449a-8cf6-82e2911c45a6",
+          "color": "#054429"
+        },
+        {
+          "id": "d682862a-af05-41d1-9732-0ea5cbce7fb3",
+          "color": "#077446"
+        },
+        {
+          "id": "d0ace572-5a86-42be-8da3-5dec47b694f5",
+          "color": "#09A563"
+        },
+        {
+          "id": "fb089f90-8408-4acc-941c-8b30391a1a0f",
+          "color": "#0BD781"
+        }
+      ]
+    },
+    {
+      "id": "0d0b7441-e9cf-425a-bda0-9dc620c17d09",
+      "colors": [
+        {
+          "id": "55e722e7-5c84-4322-8352-c551429a2b8e",
+          "color": "#A43A72"
+        },
+        {
+          "id": "6b1bca61-b936-49e6-827e-9c807f639e40",
+          "color": "#C24F8C"
+        },
+        {
+          "id": "76dd9a5a-db8c-417e-a78f-a2af2e79946e",
+          "color": "#D074A5"
+        },
+        {
+          "id": "5c4bec9b-a31e-4d45-920e-bde10f75074a",
+          "color": "#DE9ABD"
+        },
+        {
+          "id": "e11f8dfd-2907-46ef-9a7b-5bc30463234c",
+          "color": "#EBC0D6"
+        },
+        {
+          "id": "de84b99c-25f1-476b-9bed-66bdfa030ca9",
+          "color": "#E0A0C1"
+        }
+      ]
     }
   ]
 }
