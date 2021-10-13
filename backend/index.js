@@ -239,6 +239,26 @@ app.get('/api/palettes', (request, response) => {
 response.json(palettes)
 })
 
+
+//request a single palette
+app.get('/api/palettes/:id', (request, response) => {
+  const id = Number(request.params.id)
+  const palette = palettes.find(palette => palette.id === id)
+
+  if (palette) {
+    response.json(palette)
+  } else {
+    response.status(404).end()
+  }
+  request.json(palette)
+})
+
+app.delete('api/palettes', (request, response) => {
+  const id = Number(request.params.id)
+  palette = palettes.filter(palette => palette.id !== id)
+
+  response.status(204).end()
+})
 //request to get a user
 app.get(`/api/user/:id`, (request, response) => {
     const id = request.params.id
