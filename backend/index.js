@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+app.use(express.json())
 
 let palettes = [
     {
@@ -270,10 +271,30 @@ app.get(`/api/user/:id`, (request, response) => {
 })
 
 //request to get a specific users saved palettes
-app.get('/api/user/save', (request, response) => {
+app.get('/api/user/favorites', (request, response) => {
   
 })
 
+const generateId = () => {
+  const maxId = palettes.length > 0 
+    ? Math.max(...palettes.map(n => n.id)) 
+    : 0
+    return maxId + 1
+}
+
+//post request 
+app.post('/api/palettes', (request, response) => {
+  const palette = request.body
+  console.log(palette)
+
+  const palette = {
+    id: generateId(),
+    colors: body.colors,
+  }
+  palettes = palettes.concat(palette)
+  
+  response.json(palette)
+})
 const PORT = 3001
 app.listen(PORT)
 console.log(`Server running on port ${PORT}`)

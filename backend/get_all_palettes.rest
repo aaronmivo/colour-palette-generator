@@ -1,0 +1,19 @@
+GET http://localhost:3001/api/palettes
+
+### 
+POST http://localhost:3001/api/palettes
+content-type: application/json
+{
+    "id":6,
+    "colors":[
+        {
+            "color": "561D25"
+        },
+        {
+            "color": "CE8147"
+        },
+        {
+            "color": "ECDD7B"
+        }
+    ]
+}
