@@ -1,7 +1,7 @@
 //@ts-nocheck
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-const baseUrl = "http://localhost:3001/palettes"
+const baseUrl = "http://localhost:3001/api/palettes"
 
 const getPalettes = () => {
   let response = axios.get(baseUrl)

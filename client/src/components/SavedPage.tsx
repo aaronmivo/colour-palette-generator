@@ -1,6 +1,7 @@
 //@ts-nocheck
 import React, {useState, useEffect} from 'react'
 import CardList from './CardList';
+import saveService from '../services/saveService'
 
 import axios from 'axios';
 
@@ -8,7 +9,7 @@ function SavedPage({setColors}) {
     const [palette, setPalette] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3001/palettes").then(response => {
+        saveService.getPalettes().then(response => {
             setPalette(response.data)
         })
     }, [])
