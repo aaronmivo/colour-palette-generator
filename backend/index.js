@@ -1,16 +1,11 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
+app.use(cors())
 app.use(express.json())
 
-const requestLogger = (request, response, next) => {
-  console.log('Method:', request.method)
-  console.log('Path:  ', request.path)
-  console.log('Body:  ', request.body)
-  console.log('---')
-  next()
-}
 
-app.use(requestLogger)
+
 
 let palettes = [
     {
@@ -247,7 +242,8 @@ app.get('/', (request, response) => {
   
 //request to get all the color palettes
 app.get('/api/palettes', (request, response) => {
-response.json(palettes)
+  console.log(palettes)
+  response.json(palettes)
 })
 
 
@@ -297,21 +293,17 @@ app.post('/api/palettes', (request, response) => {
   const palette = request.body
   console.log(palette)
 
-  const palette = {
+  const newPalette = {
     id: generateId(),
-    colors: body.colors,
+    colors: palette.colors,
   }
-  palettes = palettes.concat(palette)
+  palettes = palettes.concat(newPalette)
   
-  response.json(palette)
+  response.json(newPalette)
 })
 
-const unknownEndpoint = (request, response) => {
-  response.status(404).send({ error: 'unknown endpoint' })
-}
 
-app.use(unknownEndpoint)
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT)
 console.log(`Server running on port ${PORT}`)
