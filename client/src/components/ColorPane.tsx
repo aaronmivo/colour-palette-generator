@@ -1,5 +1,6 @@
 //@ts-nocheck
 import React, { useState, useEffect } from 'react';
+import {FaArrowLeft, FaTrashAlt, FaLock,FaArrowRight, FaRainbow} from 'react-icons/fa';
 import './ColorPane.css';
 import chroma from 'chroma-js';
 import Hue from './Hue';
@@ -119,17 +120,17 @@ const ColorPane = ({
               {...dragHandleProps}
               className={`${light ? 'text-white' : 'text-black'}`}
             >
-              &lt;- -&gt;
+              <div className='arrows'><FaArrowLeft/><FaArrowRight/></div> 
             </div>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => toggleLock(id)}>Lock</button>
+            <button onClick={() => toggleLock(id)}><FaLock/> </button>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => deleteColor(id)}>Delete</button>
+            <button onClick={() => deleteColor(id)}><FaTrashAlt/></button>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => setShowHue(true)}>show hues</button>
+            <button onClick={() => setShowHue(true)}><FaRainbow/></button>
           </div>
         </div>
       </div>
