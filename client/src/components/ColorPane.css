@@ -8,3 +8,9 @@
     display:flex;
     display:grid;
 }
+.arrows{
+  display:flex;
+  flex-direction: row;
+  margin-left:auto;
+  margin-right:auto;
+}
