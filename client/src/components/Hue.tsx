@@ -56,7 +56,7 @@ const Hue = ({
       } : 
       {
         backgroundColor: `${color}`,
-        height: `${100 / 20}vh`,
+        height: `${92 / 20}vh`,
         width: `${100 / length}vw`,
       }
     }

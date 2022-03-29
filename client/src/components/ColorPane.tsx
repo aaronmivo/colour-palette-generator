@@ -120,17 +120,17 @@ const ColorPane = ({
               {...dragHandleProps}
               className={`${light ? 'text-white' : 'text-black'}`}
             >
-              <div className='arrows'><FaArrowLeft/><FaArrowRight/></div> 
+              &lt;- -&gt;
             </div>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => toggleLock(id)}><FaLock/> </button>
+            <button onClick={() => toggleLock(id)}>Lock</button>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => deleteColor(id)}><FaTrashAlt/></button>
+            <button onClick={() => deleteColor(id)}>Trash</button>
           </div>
           <div className={`${light ? 'text-white' : 'text-black'}`}>
-            <button onClick={() => setShowHue(true)}><FaRainbow/></button>
+            <button onClick={() => setShowHue(true)}>Show Hue</button>
           </div>
         </div>
       </div>
