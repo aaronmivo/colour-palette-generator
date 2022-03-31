@@ -73,6 +73,7 @@ const OptionsBar = ({
         className="relative"
         style={{
           marginRight: '2%',
+          height: "3vh"
         }}
       >
         <button {...buttonProps} onClick={() => setIsOpen(true)}>
