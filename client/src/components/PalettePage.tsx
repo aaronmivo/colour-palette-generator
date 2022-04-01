@@ -29,14 +29,7 @@ function PalettePage({
   let isMobile: boolean = (width <= 768);
   return (
     <div>
-      <Palette
-        colors={colors}
-        setColors={setColors}
-        deleteColor={deleteColor}
-        toggleLock={toggleLock}
-        isMobile={isMobile}
-      />
-    
+      
       <OptionsBar
         colorMode={colorMode}
         setColorMode={setColorMode}
@@ -45,6 +38,14 @@ function PalettePage({
         length={colors.length}
         colors={colors}
       />
+      <Palette
+        colors={colors}
+        setColors={setColors}
+        deleteColor={deleteColor}
+        toggleLock={toggleLock}
+        isMobile={isMobile}
+      />
+    
     </div>
   );
 }

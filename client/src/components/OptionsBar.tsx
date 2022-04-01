@@ -73,7 +73,7 @@ const OptionsBar = ({
         className="relative"
         style={{
           marginRight: '2%',
-          height: "3vh"
+          height: "2vh"
         }}
       >
         <button {...buttonProps} onClick={() => setIsOpen(true)}>
@@ -82,9 +82,9 @@ const OptionsBar = ({
         <div
           role="menu"
           id="menu"
-          className="absolute flex flex-col bg-white shadow-md"
+          className="absolute flex flex-col bg-white"
           style={{
-            visibility: isOpen ? 'visible' : 'hidden',
+            visibility: isOpen ? 'visible': 'hidden',
           }}
         >
           {colorModes.map((mode) => {
