@@ -33,7 +33,7 @@ export default function Navbar({ colors }) {
     <>
       <nav
         ref={targetRef}
-        className="relative flex flex-wrap items-center justify-between z-50 px-2 py-3 bg-white "
+        className="relative flex flex-wrap items-center justify-between z-50 px-3 py-3 bg-white "
       >
         <div className="flex w-full px-4  flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
