@@ -1,14 +1,15 @@
-# voyage-tasks
+# Colour Palette Generator
+Colour palette generator created with: 
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+* React
+* React-Router
+* React-Beautiful-DnD
+* Typescript 
+* Tailwind CSS
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+In the project directory, you can run:
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+### `npm start`
 
-> Own it & Make it your Own!
+Runs the app in the development mode.
+Open [http:://localhost:3000](http://localhost:3000)to view it in the browser.
