@@ -68,9 +68,10 @@ const OptionsBar = ({
   };
 
   return (
-    <div className="flex justify-end al" style={{height: "4vh"}}>
+    <div className="flex justify-end" style={{height: "4vh"}}>
       <div
-        className="relative flex items-center mr-8" 
+        className="relative flex mr-8" 
+        style={{height: "4vh'"}}
 
       >
         <button {...buttonProps} onClick={() => setIsOpen(true)}>
