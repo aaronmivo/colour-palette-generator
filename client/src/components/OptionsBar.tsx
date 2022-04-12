@@ -53,7 +53,7 @@ const OptionsBar = ({
   const displayAdd = () => {
     if (length < 10) {
       return (
-        <button style={{ marginRight: '2%' }} onClick={addColor}>
+        <button className={"mr-8"} onClick={addColor}>
           Add Colors{' '}
         </button>
       );
@@ -101,15 +101,15 @@ const OptionsBar = ({
         </div>
       </div>
 
-      <button className={"mx-8"} onClick={checkLockGenerate}>
+      <button className={"mr-8"} onClick={checkLockGenerate}>
         Generate
       </button>
       {displayAdd()}
-      <button className={"mx-8"} onClick={saveColor}>
+      <button className={"mr-8"} onClick={saveColor}>
         Save
       </button>
       <button
-        className={"mx-8"}
+        className={"mr-8"}
         onClick={() => {
           navigator.clipboard.writeText(formatString());
         }}
