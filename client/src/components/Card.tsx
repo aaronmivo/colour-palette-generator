@@ -30,7 +30,7 @@ const Card = ({ palette, setColors, mockUser }) => {
               <div
                 key={i}
                 className="h-full w-full"
-                style={{ backgroundColor: `${color.color}`, height: '100%' }}
+                style={{ backgroundColor: `${color.color}`}}
               ></div>
             );
           })}

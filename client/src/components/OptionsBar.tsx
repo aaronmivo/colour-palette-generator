@@ -101,15 +101,15 @@ const OptionsBar = ({
         </div>
       </div>
 
-      <button style={{ marginRight: '2rem' }} onClick={checkLockGenerate}>
+      <button className={"mx-8"} onClick={checkLockGenerate}>
         Generate
       </button>
       {displayAdd()}
-      <button style={{ marginRight: '2rem' }} onClick={saveColor}>
+      <button className={"mx-8"} onClick={saveColor}>
         Save
       </button>
       <button
-        style={{ marginRight: '2rem' }}
+        className={"mx-8"}
         onClick={() => {
           navigator.clipboard.writeText(formatString());
         }}

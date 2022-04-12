@@ -1,7 +1,6 @@
 //@ts-nocheck
 import React, { useState, useEffect } from 'react';
 import {FaArrowLeft, FaTrashAlt, FaLock,FaArrowRight, FaRainbow} from 'react-icons/fa';
-import './ColorPane.css';
 import chroma from 'chroma-js';
 import Hue from './Hue';
 

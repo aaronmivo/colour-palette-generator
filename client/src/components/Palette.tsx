@@ -1,6 +1,5 @@
 import React from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import './Palette.css';
 import ColorPane from './ColorPane';
 
 interface PaletteProps {
@@ -57,7 +56,7 @@ const Palette = ({
   };
 
   return (
-    <div className="Palette">
+    <div className="Palette w-full">
       <DragDropContext onDragEnd={onDragEnd}>
         {isMobile ? (
           <Droppable droppableId="characters">
