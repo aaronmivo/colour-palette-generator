@@ -68,13 +68,10 @@ const OptionsBar = ({
   };
 
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-end al" style={{height: "4vh"}}>
       <div
-        className="relative"
-        style={{
-          marginRight: '2%',
-          height: "2vh"
-        }}
+        className="relative flex items-center mr-8" 
+
       >
         <button {...buttonProps} onClick={() => setIsOpen(true)}>
           Scheme
@@ -103,15 +100,15 @@ const OptionsBar = ({
         </div>
       </div>
 
-      <button style={{ marginRight: '2%' }} onClick={checkLockGenerate}>
+      <button style={{ marginRight: '2rem' }} onClick={checkLockGenerate}>
         Generate
       </button>
       {displayAdd()}
-      <button style={{ marginRight: '2%' }} onClick={saveColor}>
+      <button style={{ marginRight: '2rem' }} onClick={saveColor}>
         Save
       </button>
       <button
-        style={{ marginRight: '2%' }}
+        style={{ marginRight: '2rem' }}
         onClick={() => {
           navigator.clipboard.writeText(formatString());
         }}
